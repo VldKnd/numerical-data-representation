@@ -1,1 +1,1 @@
-Package for representation of numerical data
+"Package for representation of numerical data"
