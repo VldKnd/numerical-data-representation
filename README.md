@@ -7,7 +7,7 @@ Encodings to represent numerical data
 All the given commands should be run from repository root.
 <br>
 
-**uv**
+### uv
 
 I have been using [uv](https://astral.sh/blog/uv) dependecies manager. With it you can just run:
 ```
@@ -15,7 +15,7 @@ uv sync
 ```
 and it should install all of needed dependencies in .venv folder. If you dont use it, read on!
 
-**Venv**
+### Venv
 
 I have been installing all the dependencies in virtual environment. It can be created with:
 ```bash
@@ -25,7 +25,7 @@ After creating .venv you need to activate it with:
 ```bash
 source .venv/bin/activate
 ```
-**Python dependencies**
+### Python dependencies
 To install dependencies with pip, run:
 ```bash
 pip install .
