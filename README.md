@@ -1,11 +1,9 @@
 # numerical-data-representation
 Encodings to represent numerical data
 
-<details>
-<summary>Dependencies installation</summary>
-<br>
-All the given commands should be run from repository root.
-<br>
+## Dependencies installation
+
+**All the given commands should be run from repository root.**
 
 ### uv
 
@@ -31,7 +29,6 @@ To install dependencies with pip, run:
 pip install .
 ```
 After this all the code can be executed with python from .venv `$REPO_ROOT/.venv/bin/python`. ( You can make sure that terminal is using the correct interpreter by running `which python` ). 
-</details>
 
 ## Repository structure:
 ```
