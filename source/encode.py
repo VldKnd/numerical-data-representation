@@ -21,6 +21,25 @@ EMBEDDING_TYPE_TO_EMBEDDING_CLASS: dict[EmbeddingClasses, type[BaseNumericModel]
 
 @lru_cache
 def get_embedding_model(embedding_type: str) -> BaseNumericModel:
+    """
+    Create embedding model from accessible list of classes.
+
+    Parameters
+    ----------
+    embedding_type : str
+        Type of embedding models.
+        Has to one of 'language_model', 'logarithmic', 'sigmoid', 'sinusoidal'.
+
+    Returns
+    -------
+    BaseNumericModel
+        Instance of embedding model
+
+    Raises
+    ------
+    RuntimeError
+        If embedding type is not supported it will raise a runtime error.
+    """
     try:
         embedding_type_as_enum = EmbeddingClasses(embedding_type)
         return EMBEDDING_TYPE_TO_EMBEDDING_CLASS[embedding_type_as_enum]()
@@ -36,11 +55,55 @@ def get_embedding_model(embedding_type: str) -> BaseNumericModel:
 def encode_number(
     input: int | str | float, embedding_type: str = "sinusoidal"
 ) -> torch.Tensor:
+    """
+    Encodes input with embeding from accessible list of classes.
+
+    Parameters
+    ----------
+    input: int | str | float
+        Number to be encoded.
+
+    embedding_type : str
+        Type of embedding models.
+        Has to one of 'language_model', 'logarithmic', 'sigmoid', 'sinusoidal'.
+
+    Returns
+    -------
+    torch.Tensor
+        Encoding of a number
+
+    Raises
+    ------
+    RuntimeError
+        If embedding type is not supported it will raise a runtime error.
+    """
     return encode_numbers([input], embedding_type=embedding_type)[0]
 
 
 def encode_numbers(
     input: list[int | str | float], embedding_type: str = "sinusoidal"
 ) -> torch.Tensor:
+    """
+    Encodes list of inputs with embeding from accessible list of classes.
+
+    Parameters
+    ----------
+    input: list[int | str | float]
+        Inputs to be encoded.
+
+    embedding_type : str
+        Type of embedding models.
+        Has to one of 'language_model', 'logarithmic', 'sigmoid', 'sinusoidal'.
+
+    Returns
+    -------
+    torch.Tensor
+        Encoding of a number
+
+    Raises
+    ------
+    RuntimeError
+        If embedding type is not supported it will raise a runtime error.
+    """
     embedding_model = get_embedding_model(embedding_type)
     return embedding_model.encode(input)
