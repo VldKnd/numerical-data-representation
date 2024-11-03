@@ -28,7 +28,7 @@ After creating .venv you need to activate it with:
 source .venv/bin/activate
 ```
 ### Pip python dependencies
-To install dependencies with pip, run:
+To install dependencies with pip, run ( **Inside created .venv** ):
 ```bash
 pip install .
 ```
