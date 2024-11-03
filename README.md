@@ -1,5 +1,6 @@
 # numerical-data-representation
-Encodings to represent numerical data
+
+Small exepriments on encodings to represent numerical data for neuralk.
 
 ## Dependencies installation
 
@@ -37,7 +38,7 @@ After this all the code can be executed with python from .venv `$REPO_ROOT/.venv
 ## Repository structure:
 ```
 numerical-data-representation
-├── assignment
+├── assignment # Description of an assignment.
 ├── notebooks # Folder with jupyter notebooks. 
 |    ├── evaluation.ipynb # Evaluation of logarithmic embeddings on some simple use cases.
 |    └── plot_embedding_relations.ipynb # Comparison of different embedding schemes.
