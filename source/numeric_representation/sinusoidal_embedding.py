@@ -23,7 +23,7 @@ class SinusoidalMinilmEmbedding(torch.nn.Module, BaseNumericModel):
         # Cache computation for sinusoidal embedding
         self.division_term = torch.exp(log_division_term)
 
-    def encode(self, input: list[int | float | str]):
+    def encode(self, input: list[int | float | str]) -> torch.Tensor:
         numbers_from_inputs = torch.Tensor(
             [self.extract_number(sentence) for sentence in input]
         )

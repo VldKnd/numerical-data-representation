@@ -1,6 +1,6 @@
 "Sub-package for integer or float representation"
 
-from .base_numeric_model import BaseNumericModel
+from .base_numeric_model import BaseNumericModel, EmbeddingClasses
 from .lm_embedding import MinilmEmbedding
 from .logarithmic_embedding import LoagrithmicMinilmEmbedding
 from .sigmoid_embedding import SigmoidMinilmEmbedding
@@ -12,4 +12,5 @@ __all__ = [
     "LoagrithmicMinilmEmbedding",
     "SigmoidMinilmEmbedding",
     "MinilmEmbedding",
+    "EmbeddingClasses",
 ]

@@ -10,7 +10,7 @@ class SigmoidMinilmEmbedding(torch.nn.Module, BaseNumericModel):
         self.sentence_transformer = SentenceTransformer("all-MiniLM-L6-v2")
         self.embedding_size = 384
 
-    def encode(self, input: list[int | float | str]):
+    def encode(self, input: list[int | float | str]) -> torch.Tensor:
         numbers_from_inputs = torch.Tensor(
             [self.extract_number(sentence) for sentence in input]
         )

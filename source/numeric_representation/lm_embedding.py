@@ -9,7 +9,7 @@ class MinilmEmbedding(torch.nn.Module, BaseNumericModel):
         super().__init__()
         self.sentence_transformer = SentenceTransformer("all-MiniLM-L6-v2")
 
-    def encode(self, input: list[int | float | str]):
+    def encode(self, input: list[int | float | str]) -> torch.Tensor:
         contextual_embeddings = self.extract_contexctual_embeddings(input)
 
         return contextual_embeddings
