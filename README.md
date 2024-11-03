@@ -52,7 +52,8 @@ numerical-data-representation
 ```
 
 ## Example of execution:
-Minimal working code:
+Example of minimal working code:
+
 ```python
 >>> from source.encode import encode_numbers
 >>> input = ["1"]
@@ -61,9 +62,9 @@ Minimal working code:
 tensor([[ 0.8657, -0.4143,  0.8766, -0.3121,  ...  0.8513,  0.5340]])
 ```
 
-You can find more working examples in `tests/` or `notebooks/`.
+More working examples are located in `tests/` or `notebooks/`.
 
-To run `tests` you can use
+To run `tests` use
 ```bash
 python -m unittest tests/test_encode_function.py
 ```
