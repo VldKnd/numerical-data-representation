@@ -51,7 +51,18 @@ numerical-data-representation
 ```
 
 ## Example of execution:
-You can find minimal working example in `tests/` or `notebooks/`. To run `tests` you can use
+Minimal working code:
+```python
+>>> from source.encode import encode_numbers
+>>> input = ["1"]
+>>>> embeddings = encode_numbers(input=input)
+>>> print(embeddings)
+tensor([[ 0.8657, -0.4143,  0.8766, -0.3121,  ...  0.8513,  0.5340]])
+```
+
+You can find more working examples in `tests/` or `notebooks/`.
+
+To run `tests` you can use
 ```bash
 python -m unittest tests/test_encode_function.py
 ```
