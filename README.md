@@ -7,11 +7,15 @@ Encodings to represent numerical data
 
 ### uv
 
-I have been using [uv](https://astral.sh/blog/uv) dependecies manager. With it you can just run:
+I have been using [uv](https://astral.sh/blog/uv) dependecies manager.
+
+If you are already using it you should just run:
 ```
 uv sync
 ```
-and it should install all of needed dependencies in .venv folder. If you dont use it, read on!
+and it will install all of needed dependencies in .venv folder.
+
+If you dont use it, read on!
 
 ### Venv
 
