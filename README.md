@@ -25,7 +25,7 @@ After creating .venv you need to activate it with:
 ```bash
 source .venv/bin/activate
 ```
-### Python dependencies
+### Pip python dependencies
 To install dependencies with pip, run:
 ```bash
 pip install .
