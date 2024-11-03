@@ -15,7 +15,7 @@ uv sync
 ```
 and it will install all of needed dependencies in .venv folder.
 
-If you dont use it, read on!
+If you dont use it yet, read on! I will explain how you can install dependecies with pip
 
 ### Venv
 
