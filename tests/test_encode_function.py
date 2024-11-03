@@ -18,11 +18,14 @@ class TestEncodeFunction(unittest.TestCase):
             encode_number(input=input, embedding_type=element.value)
 
     def test_encode_numbers_2(self):
-        numerical_input: list[str | int | float ] = [3.14, 10]
+        numerical_input: list[str | int | float] = [3.14, 10]
         for element in EmbeddingClasses:
             encode_numbers(input=numerical_input, embedding_type=element.value)
 
-        string_input: list[str | int | float ] = ["Rated 5 stars", "The product costs 23 dollars"]
+        string_input: list[str | int | float] = [
+            "Rated 5 stars",
+            "The product costs 23 dollars",
+        ]
         for element in EmbeddingClasses:
             encode_numbers(input=string_input, embedding_type=element.value)
 
@@ -34,7 +37,8 @@ class TestEncodeFunction(unittest.TestCase):
             "The product costs 23 dollars",
         ]:
             for element in EmbeddingClasses:
-                encode_numbers(input=input, embedding_type=element.value)
+                encode_number(input=input, embedding_type=element.value)
+
 
 if __name__ == "__main__":
     unittest.main()
