@@ -49,3 +49,9 @@ numerical-data-representation
 ├── pyproject.toml # Python dependencies
 └── ...
 ```
+
+## Example of execution:
+You can find minimal working example in `tests/` or `notebooks/`. To run `tests` you can use
+```bash
+python -m unittest tests/test_encode_function.py
+```
