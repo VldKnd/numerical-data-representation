@@ -915,20 +915,3 @@ chemaxon_license.cxl
 # terraform / terragrunt
 .terraform.lock.hcl
 .terragrunt-cache/
-
-local-s3
-
-.tool-versions
-poetry.toml
-
-**/playground
-**/local_dev/volume
-
-# MDFT
-**/aqemia-compute-stages/workers/worker-mdft/worker_mdft/assets
-mdft
-tip3p-ck_nonzero_nmax0_ml
-tip3p-ck_nonzero_nmax1_ml
-tip3p-ck_nonzero_nmax2_ml
-tip3p-ck_nonzero_nmax3_ml
-**/aqemia-compute-stages/workers/worker-mdft/worker_mdft/assets
